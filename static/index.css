@@ -3,9 +3,13 @@
     padding: 0px;
 }
 
+th {
+    background-color: rgb(49, 49, 49);
+    color: white;
+}
+
 table tr td {
-    width: 50px;
-    height: 50px;
+    height: 70px;
 }
 
 .color1 {

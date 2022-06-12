@@ -8,35 +8,24 @@
     <title>Document</title>
 </head>
 <body>
-
-    <!-- <h1>6 x 6 matrix</h1>
+    <h1>Users</h1>
     <table>
-        {% for i in range(3): %} 
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Full Name</th>
+        {% for element in list_of_users: %} 
         <tr>
-            {% for j in range(3): %}
-            <td class="color1"></td>
-            <td class="color2"></td>
-            {% endfor %}
+            <td>
+                {{ element["first_name"] }}
+            </td>
+            <td>
+                {{ element["last_name"] }}
+            </td>
+            <td>
+                {{ element["first_name"] }} {{ element["last_name"] }}
+            </td>
         </tr>
-        <tr>
-            {% for j in range(3): %}
-            <td class="color2"></td>
-            <td class="color1"></td>
-            {% endfor %}
-        </tr>
-         {% endfor %}
-        
-    </table> -->
-
-    <h1>8 x 8 Checkerboard</h1>
-    <table>
-        {% for i in range(6): %} 
-        <tr>
-            {% for j in range(6): %}
-            <td class="color{{ (i+j)%2+1 }}"></td>
-            {% endfor %}
-        </tr>
-         {% endfor %}
+        {% endfor %}
     </table>
 
 </body>
